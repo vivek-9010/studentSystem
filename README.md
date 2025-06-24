@@ -20,3 +20,6 @@ A Django-based Student Information System for managing student records, admissio
 
 📂 Project Structure
 ![1-3](https://github.com/user-attachments/assets/642a4c88-f06c-4ee3-8248-f1c1b3178f08)
+Preview:
+![1-1](https://github.com/user-attachments/assets/f785ba8e-24bf-4995-89fd-f39d7e7db86b)
+![1-2](https://github.com/user-attachments/assets/0a5f24bf-8056-4b63-83bc-aeec4c2b2d26)
