@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Detail</title>
+</head>
+<body>
+    <h1>Student Details</h1>
+    <p>Name: {{ student.name }}</p>
+    <p>Roll Number: {{ student.roll_number }}</p>
+    <!-- Add other student fields here -->
+    <a href="{% url 'student_list' %}">Back to list</a>
+</body>
+</html>

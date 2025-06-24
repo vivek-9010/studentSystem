@@ -1,0 +1,31 @@
+{% extends 'students/base.html' %}
+
+{% block title %}Confirm Delete - {{ student.name }}{% endblock %}
+
+{% block content %}
+<div class="card border-danger">
+    <div class="card-header bg-danger text-white">
+        <h2 class="mb-0">Confirm Student Deletion</h2>
+    </div>
+    <div class="card-body">
+        <p class="lead">Are you sure you want to permanently delete <strong>{{ student.name }}</strong>?</p>
+        <p class="text-muted">Student ID: {{ student.id }} | Grade: {{ student.grade }}</p>
+        <p class="text-danger"><strong>Warning:</strong> This action cannot be undone.</p>
+        
+        <form method="POST">
+            {% csrf_token %}
+            <div class="d-grid gap-2 d-md-flex mt-4">
+                <button type="submit" class="btn btn-lg btn-danger">
+                    <i class="bi bi-trash-fill"></i> Yes, Delete Permanently
+                </button>
+                <a href="{% url 'student_detail' student.pk %}" class="btn btn-lg btn-outline-secondary">
+                    <i class="bi bi-arrow-left-circle"></i> View Details
+                </a>
+                <a href="{% url 'student_list' %}" class="btn btn-lg btn-secondary">
+                    <i class="bi bi-x-circle"></i> Cancel
+                </a>
+            </div>
+        </form>
+    </div>
+</div>
+{% endblock %}
