@@ -13,25 +13,10 @@ A Django-based Student Information System for managing student records, admissio
 🧪 Tested with exception handling and form validation
 
 🛠 Tech Stack
-Python 3.x
-
-Django 5.x
-
-SQLite (default) or any other supported DB
-
-HTML/CSS (for templates)
+->Python 3.x
+->Django 5.x
+->SQLite (default) or any other supported DB
+->HTML/CSS (for templates)
 
 📂 Project Structure
-bash
-Copy code
-studentSystem/
-├── manage.py
-├── studentSystem/          # Django project settings
-│   └── settings.py
-├── students/               # Main student app
-│   ├── models.py
-│   ├── views.py
-│   ├── urls.py
-│   └── templates/students/
-├── static/                 # CSS, JS, images
-└── templates/              # Global templates
+![1-3](https://github.com/user-attachments/assets/642a4c88-f06c-4ee3-8248-f1c1b3178f08)
